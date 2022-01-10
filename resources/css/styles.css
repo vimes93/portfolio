@@ -6,114 +6,86 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: "Readex Pro";
 }
 
-#banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+header {
+    background-color: #caebf2;
+    position: fixed;
+    top: 0;
     width: 100%;
-    background-color: #557a95;
-    color: #b1a296;
-    border-bottom: #b1a296 3px solid;
+    color: #a9a9a9;
+    z-index: 5;
+    border-bottom: 2px solid #ff3b3f;
 }
 
-nav {
-    width: 25%;
-    position: relative;
-    right: 2%; 
+header h1 {
+float: left;
+padding-left: 10%;
+font-family: "Cinzel Decorative";
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;  
+header ul {
+    float: right;
+    padding-top: 15px;
+    padding-right: 10%;
 }
 
-nav li {
-    display: inline;
-    margin: 3%;
-    font-family: Dosis;
-    font-size: 130%;
-    border: 1px solid #b1a296;
-    padding: 2%;
+ul li {
+    display: inline-block;
+    margin: 0 30px;
+    padding: 0 5px;
+    font-size: 1.1rem;
+    font-family: "Readex Pro";
+    border-bottom: 1px solid #ff3b3f;
 }
 
-h1 {
-    font-family: "Playfair Display";
-    font-size: 300%;
-    font-weight: 350;
-    position: relative;
-    left: 1.5%;
-    border-bottom: #b1a296 1px solid;
-    border-right: #b1a296 3px solid;
-    padding-right: 3%;
-}
 
 main {
-    background-color: #7ea3bd;
+    position: relative;
+    top: 80px;
+    background-color: #efefef;
+    width: 100%;
+}
+
+#content {
+    width: 70%;
     display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    position: relative;
+    left: 2.5%;
 }
 
-#about-projects {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3%;
-    padding-top: 3%;
-    font-family: Dosis;
-    color: #404042;
-}
-
-p {
-    font-size: 130%;
-    margin-right: 5%;
-}
-
-h2 {
-    border-bottom: 2px solid #b1a296;
-    width: 20%;
+#aboutprojects {
+    width: 60%;
+    position: relative;
+    left: 10%;
+    margin-top: 3.5%;
 }
 
 img {
+    position: relative;
+    left: 25%;
+    margin-top: 30px;
     border-radius: 6%;
-    border: 2px solid #b1a296;
+    width: 25%;
+    height: 25%;
 }
 
-@media only screen and (max-width: 1300px) {
-    #banner {
-        justify-content: space-around;
-    }
-
-    h1 {
-        left: -7%;
-    }
-
+h2 {
+    border-bottom: 1px solid #ff3b3f;
+    margin-top: 6%;
+    margin-bottom: 5%;
 }
 
-@media only screen and (max-width: 960px) {
-    h1 {
-        font-size: 150%;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        font-size: 100%;
-    }
-
-    img {
-        height: 25%;
-        width: 25%;
-    }
+p {
+    line-height: 1.5;
+    font-size: 120%;
 }
 
-@media only screen and (max-width: 425px) {
-    h1 {
-        font-size: 130%;
-    }
-    
-    #banner {
-        justify-content: center;
-    }
+i {
+    margin: 0 6% 0 6%;
+    font-size: 350%;
+    color: #ff3b3f;
 }
